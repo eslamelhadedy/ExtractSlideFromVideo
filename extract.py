@@ -29,7 +29,7 @@ print(G + r'''
 
 ''')
 
-filename=input('input video file name:')
+filename=sys.argv[1] #Argument
 os.system('ffmpeg -i '+filename+' -vf mpdecimate,setpts=N/FRAME_RATE/TB out.mp4')
 cap= cv2.VideoCapture(filename+'out.mp4')
 i=0
