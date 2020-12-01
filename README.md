@@ -2,11 +2,13 @@
 
 # How to Install And Open the script:-
 
-## 1- `git clone https://github.com/eslamelhadedy/ExtractSlideFromVideo`
+###  1- `sudo apt install ffmpeg` this is must installed
 
-## 2- cd ExtractSlideFromVideo
+###  2- `git clone https://github.com/eslamelhadedy/ExtractSlideFromVideo`
 
-## 3- python extract.py videoname.mp4
+###  3- cd ExtractSlideFromVideo
+
+###  4- python extract.py videoname.mp4
 
 ------------------------------------------------------------
 
