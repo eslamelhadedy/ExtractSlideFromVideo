@@ -30,7 +30,7 @@ print(G + r'''
 ''')
 
 filename=sys.argv[1] #Argument
-os.system('ffmpeg -i '+filename+' -vf mpdecimate,setpts=N/FRAME_RATE/TB out.mp4')
+os.system('ffmpeg -i '+filename+' -vf mpdecimate,setpts=N/FRAME_RATE/TB -map 0:v '+filename+'out.mp4')
 cap= cv2.VideoCapture(filename+'out.mp4')
 i=0
 imgs=[]
